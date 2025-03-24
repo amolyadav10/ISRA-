@@ -6,44 +6,6 @@
     <title>ISRA vs. Chapter 25 Bar - Case Analysis</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-        }
-        .timeline-container, .arguments-container, .impact-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px;
-        }
-        .timeline-item, button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .timeline-item:hover, button:hover {
-            background-color: #0056b3;
-        }
-        #event-details, #argument-details, #impact-details, #quiz-container {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: white;
-            border-radius: 5px;
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -85,37 +47,5 @@
     <footer>
         <p>Copyright &copy; 2025 - Interactive Legal Presentation</p>
     </footer>
-
-    <script>
-        function showDetails(event) {
-            let details = {
-                'event1': 'In August 2015, ISRA filed the lawsuit against Chapter 25 Bar for playing music without proper licensing.',
-                'event2': 'In September 2015, the court granted an interim injunction, restraining the defendant from playing ISRA’s content.',
-                'event3': 'In August 2016, the Delhi High Court ruled in favor of ISRA, issuing a permanent injunction and ordering financial disclosures.'
-            };
-            document.getElementById('event-details').innerHTML = details[event];
-            document.getElementById('event-details').style.display = 'block';
-        }
-        function showArguments(side) {
-            let arguments = {
-                'isra': 'ISRA argued that performers have a statutory right to royalties under Section 38A and that Chapter 25 Bar failed to obtain a proper license.',
-                'chapter25': 'The defendant could have argued that playing background music was incidental and did not qualify as commercial exploitation.'
-            };
-            document.getElementById('argument-details').innerHTML = arguments[side];
-            document.getElementById('argument-details').style.display = 'block';
-        }
-        function showImpact(type) {
-            let impact = {
-                'legal': 'This case reinforced the importance of licensing music in commercial establishments and set a precedent for performer rights enforcement.',
-                'industry': 'Following this ruling, businesses became more aware of the necessity of paying royalties, leading to stricter compliance with copyright laws.'
-            };
-            document.getElementById('impact-details').innerHTML = impact[type];
-            document.getElementById('impact-details').style.display = 'block';
-        }
-        function startQuiz() {
-            let question = prompt('What section of the Copyright Act, 1957 protects performers’ rights? (A) 18, (B) 38A, (C) 52, (D) 65');
-            alert(question.toUpperCase() === 'B' ? 'Correct!' : 'Try Again!');
-        }
-    </script>
 </body>
 </html>
